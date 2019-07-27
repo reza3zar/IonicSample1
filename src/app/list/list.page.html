@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      ذخیره محلی      
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="white">
+  <ion-list>
+
+    <ion-item>
+      <ion-label stacked> نام کاربری :</ion-label>
+      <ion-input [(ngModel)]="userName" type="text"> </ion-input>
+    </ion-item>
+  
+ 
+
+    <ion-button margin shape="round" expand="full" color="secondary" (click)="saveUserstorege()"  >
+      ذخیره
+     </ion-button>
+
+     <ion-button margin shape="round" expand="full" color="light" (click)="loadDataUserstorege()"  >
+      بارگذاری
+     </ion-button>
+ 
+
+  </ion-list>
+ 
+</ion-content>

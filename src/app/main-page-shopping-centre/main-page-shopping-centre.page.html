@@ -1,0 +1,119 @@
+<ion-header>
+    <ion-toolbar color="primary">
+      <ion-buttons slot="start">
+        <ion-menu-button color="secondary"></ion-menu-button>
+      </ion-buttons>
+      <ion-title>
+          <ion-text color="light">
+            <ion-text color="light" class="fw700">فروشگاه</ion-text>
+          </ion-text>
+      </ion-title>
+      <ion-buttons slot="end">
+        <ion-button size="small" shape="round" color="medium"  >
+          <ion-icon name="cart"></ion-icon>
+          <ion-badge color="dark" slot="end"  >0</ion-badge>
+        </ion-button>
+      </ion-buttons>
+    </ion-toolbar>
+    <ion-toolbar color="dark">
+      <ion-searchbar placeholder="جستجو کالا"    ></ion-searchbar>
+      <ion-buttons slot="end">
+        <ion-button size="small" shape="round" color="medium"  >
+          <ion-icon name="options"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content color="white" *ngIf="!isLoadedpage"  >
+ <div  class="loader ">loading </div>
+  </ion-content>
+<ion-content color="white" *ngIf="isLoadedpage"  >
+
+    <ion-grid>
+        <ion-row >
+          <ion-col size="12">
+              <ion-card class="bg-white" (click)="navigateToCategoryDetails(1)">
+                  <ion-img src="../../assets/img/5cfe6f088dc85.jpg"></ion-img>
+                </ion-card>
+          </ion-col>
+     </ion-row>
+
+     <ion-row >
+        <ion-col size="6">
+            <ion-card class="bg-white">
+                <ion-img src="../../assets/img/5cfe6fea32e16.jpg"></ion-img>
+              </ion-card>
+        </ion-col>
+        <ion-col size="6">
+            <ion-card class="bg-white">
+                <ion-img src="../../assets/img/5cfe70735e36b.jpg"></ion-img>
+              </ion-card>
+        </ion-col>
+   </ion-row>
+
+ 
+
+ 
+ 
+
+
+ 
+
+    <ion-row >
+        <ion-col size="4">
+          
+      <ion-card class="bg-white">
+          <ion-img src="../../assets/img/1000006753.jpg"></ion-img>
+        </ion-card>
+          </ion-col>
+    
+          <ion-col size="4">
+              <ion-card class="bg-white">
+                  <ion-img src="../../assets/img/1000006757.jpg"></ion-img>
+                </ion-card>
+            </ion-col>
+    
+            <ion-col size="4">
+                <ion-card class="bg-white">
+                    <ion-img src="../../assets/img/1000006755.jpg"></ion-img>
+                  </ion-card>
+              </ion-col>
+        </ion-row>
+ 
+
+
+   
+
+        <ion-row >
+            <ion-col size="4">
+               
+        <ion-card class="bg-white">
+            <ion-img src="../../assets/img/1000006751.jpg"></ion-img>
+          </ion-card>
+              </ion-col>
+        
+              <ion-col size="4">
+                
+  
+        <ion-card class="bg-white">
+            <ion-img src="../../assets/img/1000006891.jpg"></ion-img>
+          </ion-card>
+  
+                </ion-col>
+        
+                <ion-col size="4">
+                    <ion-card class="bg-white">
+                        <ion-img src="../../assets/img/1000006786.jpg"></ion-img>
+                      </ion-card>
+                  </ion-col>
+            </ion-row>
+
+
+
+ 
+
+  
+  
+    </ion-grid>
+</ion-content>
